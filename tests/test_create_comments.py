@@ -8,7 +8,7 @@ import random
 
 @pytest.fixture
 def valid_data():
-    post_id = random.randint(1, 101)
+    post_id = random.randint(1, 100)
     return gen_comment_data(post_id)
 
 
