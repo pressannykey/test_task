@@ -32,3 +32,7 @@ class Client:
     @allure.step
     def get_posts_by_userid(self, user_id: int):
         return self._get(path=f"/posts?userId={user_id}")
+
+    @allure.step
+    def create_new_comment(self, data):
+        return self._post(path=f"/comments", data=data)
